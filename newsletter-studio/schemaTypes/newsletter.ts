@@ -12,6 +12,11 @@ export default defineType({
       validation: (Rule) => Rule.required().email(),
     }),
     defineField({
+      name: 'source',
+      title: 'Source',
+      type: 'string',
+    }),
+    defineField({
       name: 'createdAt',
       title: 'Created At',
       type: 'datetime',
